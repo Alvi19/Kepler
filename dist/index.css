@@ -1,0 +1,5 @@
+#kepler-gl__map {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: clip;
+}
