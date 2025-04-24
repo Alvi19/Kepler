@@ -13,10 +13,10 @@ export const MapZoomWatcher = ({ dispatch }: { dispatch: any }) => {
 
   // Aturan zoom, urutkan dari yang paling spesifik ke paling umum
   const zoomLayerRules: ZoomRule[] = [
-    { label: "Hex11_all_fix.geojson", showIfZoomAbove: 11 },
-    { label: "Hex10_all_fix.geojson", showIfZoomAbove: 10 },
-    { label: "Hex9_all_fix.geojson", showIfZoomAbove: 9.5 },
-    { label: "Hex8_all_fix.geojson", showIfZoomBelow: 9.5 },
+    { label: "Hex11_all_fix.geojson", showIfZoomAbove: 13 },
+    { label: "Hex10_all_fix.geojson", showIfZoomAbove: 11.5 },
+    { label: "Hex9_all_fix.geojson", showIfZoomAbove: 10 },
+    { label: "Hex8_all_fix.geojson", showIfZoomBelow: 10 },
   ];
 
   const zoom = useSelector(

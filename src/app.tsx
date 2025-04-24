@@ -44,22 +44,6 @@ const App = ({ dispatch }: any) => {
       .catch((err) => {
         console.error("❌ Error loading JSON:", err);
       });
-    // fetch("/layer2-data.json")
-    //   .then((res) => {
-    //     if (!res.ok) {
-    //       throw new Error("File not found or fetch error 2");
-    //     }
-    //     return res.json();
-    //   })
-    //   .then((json) => {
-    //     console.log("✅ JSON Loaded: kepler2.json", json);
-    //     const loaded = KeplerGlSchema.load(json);
-    //     console.log("🔄 Parsed Schema: kepler2.json", loaded);
-    //     dispatch(addDataToMap(loaded));
-    //   })
-    //   .catch((err) => {
-    //     console.error("❌ Error loading kepler2.json:", err);
-    //   });
   }, [dispatch]);
 
   return (
